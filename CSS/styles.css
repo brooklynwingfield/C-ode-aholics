@@ -247,3 +247,7 @@ summary[open] {
       width: 100%;
     }
   }
+
+  .adobe-col-2 figcaption {
+    color: #341fc5;
+  }
