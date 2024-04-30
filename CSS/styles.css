@@ -418,22 +418,6 @@ summary[open] {
     margin-top: 25px;
   }
   
-  .footer-distributed .footer-icons a{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color:  #33383b;
-    border-radius: 2px;
-  
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-  }
-  
   @media (max-width: 880px) {
   
     .footer-distributed{
@@ -521,8 +505,43 @@ button[type=submit] a {
     color: white;
 }
 
-
-
 .button {
     text-align: center;
+}
+
+/* Portfolio Page */
+
+.portfolio-nav {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.portfolio-nav button {
+  background: white;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  margin-left: 90px;
+  margin-bottom: 50px;
+  transition: background 0.5s, transform 0.5s;
+  outline: double #341fc5 3px;
+}
+
+.portfolio-nav button i {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #5369f1;
+}
+
+.portfolio-nav h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #5369f1;
+}
+
+.portfolio-nav button:hover {
+  background-color: #341fc5;
+  
 }
