@@ -111,7 +111,7 @@ hr {
     flex-basis: 40%;
 }
 
-.award-col-1 , .award-col-2, .adobe-col-1, .adobe-col-2 {
+.award-col-1 , .award-col-2, .adobe-col-1, .adobe-col-2, .webdesign-col-1, .webdesign-col-2 {
     flex-basis: 45%;
 }
 
@@ -206,14 +206,6 @@ padding: 5px;
 font-size: 20px;
 font-weight: bold;
 border: 30px;
-}
-
-summary:hover {
-background-color: #5369f1;
-}
-
-summary[open] {
-    background-color: white;
 }
 
 .lighter-blue-content h1 {
@@ -550,15 +542,21 @@ button[type=submit] a {
   margin-bottom: 80px;
 }
 
+#photoshop summary, #premiere summary, #illustrator summary, #ae summary {
+  border-radius: 5px;
+}
+
+#adobe [open] {
+  width: 100%;
+}
+
 embed {
-  width: 90%;
+  width: 100%;
   height: 100vh;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-.embed {
-  text-align: center;
+  padding: 15px;
+  outline: double #341fc5 3px;
 }
 
 .wordpress {
@@ -579,26 +577,151 @@ embed {
   text-align: center;
 }
 
+video {
+  margin-top: 30px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.photoshop-col-1, .photoshop-col-2 {
+  flex-basis: 45%;
+}
+
 audio {
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 40px;
+  margin-left: 80px;
 }
 
 .radio {
   text-align: center;
   font-weight: bold;
   display: inline-block;
-  margin: 0 100px;
+  margin: 0 75px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.figma {
-  width: 100%;
-  text-align: center;
+.radio-last {
+  margin-left: 275px;
 }
 
 .figma-project {
   margin-top: 40px;
   margin-bottom: 40px;
+  width: 100%;
+}
+
+#photoshop, #premiere, #illustrator, #ae {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+  display: inline-block;
+  width: 22%;
+}
+
+#photoshop img, #illustrator img {
+  width: 45%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  outline: double 3px #341fc5;
+}
+
+.website input[type=button] {
+    background: #341fc5;
+	  outline: solid 2px #5369f1;
+	  border: solid 2px white;
+	  color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.website {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.figma-col-1, .figma-col-2 {
+  flex-basis: 45%;
+}
+
+iframe {
+  outline: double #341fc5 3px;
+  padding: 15px;
+}
+
+#figma h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+/*Mobile Styles*/
+@media only screen and (max-width: 480px) {
+  #header {
+    background-image: url(/C-ode-aholics/Images/background-mobile.png);
+    width: 110%;
+  }
+
+  hr {
+    width: 110%;
+  }
+
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+    color: #341fc5;
+  }
+
+  nav ul {
+    background-color: #8dacf9;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 45px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    color: #341fc5;
+  }
+}
+
+/*Tablet Styles 768 */
+
+@media only screen and (max-width: 768px) {
+  #header {
+    background-image: url(/C-ode-aholics/Images/background-tablet.png);
+  }
+
+  .header-text {
+    margin-top: 40%;
+    font-size: 16px;
+  }
 }

@@ -15,12 +15,14 @@
        <div class="container">
         <nav>
             <img src="Images/header-logo.png" class="logo" alt="C^ode-aholics Logo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#containers">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul id="sidemenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#containers">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <h3>"Let's Code Together."</h3><br>
@@ -63,97 +65,127 @@
                 </div>
 </div></div>
 
-      <div class="container">
-        <div>
-          <details id="webdesign">
-            <summary>Web Design</summary>
-          <div class="webdesign"><br>
-            <p class="center-text">Designs include pure HTML & CSS, Bootstrap, and jQuery.</p>
-            <div class="embed">
+<div class="container">
+<div id="portfolio">
+  <div id="webdesign">
+    <h1>> Web Design</h1><br>
+    <p class="center-text">* Sites with a Figma layout.</p>
+      <div class="row">
+        <ol class="webdesign-col-1">
             <embed src="https://brooklynwingfield.github.io/Clearwater-Fine-Art-Images/index.html">
-            <embed src="https://brooklynwingfield.github.io/chattwebdesign/Bootstrap/index.html">
+              <figcaption>A photography business site for an internship.<br><br>Made with pure HTML & CSS and Javascript.</figcaption>
+              <div class="website"><input type="button" onclick="location.href= 'https://brooklynwingfield.github.io/Clearwater-Fine-Art-Images/index.html';" value="^ View Page"></div>
             <embed src="https://brooklynwingfield.github.io/chattwebdesign/Team_Project/destin.html">
-            <embed src="https://brooklynwingfield.github.io/webdesignchatt/Billy_Mac's/index.html">
-            <embed src="https://brooklynwingfield.github.io/chattwebdesign/HTML_&_CSS_Review/index.html">
+              <figcaption>* This is a team project about Florida destinations.<br><br>Made with pure HTML & CSS, Javascript/jQuery, and Bootstrap.</figcaption>
+              <div class="website"><input type="button" onclick="location.href= 'https://brooklynwingfield.github.io/chattwebdesign/Team_Project/destin.html';" value="^ View Page"></div>
             <embed src="https://brooklynwingfield.github.io/chattwebdesign/Final_Project/index.html">
-            </div>
-          </div>
-          <div class="wordpress">
-            <h2 class="center-text">WordPress Design</h2>
-            <div class="embed">
-              <embed src="https://chattwebdesign.wordpress.com/">
-            </div>
-            <div class="wp-btn">
-            <a href="http://webdesignchatt.42web.io/">
-              <button  class="wordpress-button">Another WordPress Project
-              </button>
-            </a>
-            </div>
-          </div>
-        </details>
-
-        <details id="adobe">
-          <summary>Adobe Apps</summary>
-        <details>
+              <figcaption>* A website about famous franchise, "Five Nights at Freddy's."<br><br>Made with pure HTML & CSS and Bootstrap.</figcaption>
+              <div class="website"><input type="button" onclick="location.href= 'https://brooklynwingfield.github.io/chattwebdesign/Final_Project/index.html';" value="^ View Page"></div>
+          </ol>
+          <ol class="webdesign-col-2">
+            <embed src="https://brooklynwingfield.github.io/chattwebdesign/Bootstrap/index.html">
+              <figcaption>This is a website for one of my favorite games, "Genshin Impact."<br><br>Made with pure HTML & CSS and Bootstrap.</figcaption>
+              <div class="website"><input type="button" onclick="location.href= 'https://brooklynwingfield.github.io/chattwebdesign/Bootstrap/index.html';" value="^ View Page"></div>
+            <embed src="https://brooklynwingfield.github.io/webdesignchatt/Billy_Mac's/index.html">
+              <figcaption>* A website for a fake restaurant arcade company.<br><br>Made with pure HTML & CSS and Javascript/jQuery.</figcaption>
+              <div class="website"><input type="button" onclick="location.href= 'https://brooklynwingfield.github.io/webdesignchatt/Billy_Ma\c\'s/index.html';" value="^ View Page"></div>
+            <embed src="https://brooklynwingfield.github.io/chattwebdesign/HTML_&_CSS_Review/index.html">
+              <figcaption>This is a website for a video game called "Emily is Away."<br><br>Made with just pure HTML & CSS.</figcaption>
+              <div class="website"><input type="button" onclick="location.href= 'https://brooklynwingfield.github.io/chattwebdesign/HTML_&_CSS_Review/index.html';" value="^ View Page"></div>
+          </ol></div></div>
+      
+      <div class="container">
+      <div id="adobe">
+        <h1>> Adobe</h1><br>
+        <details id="photoshop">
           <summary>Photoshop</summary>
-          <img src="Images/adobe/Photoshop_MidTermProject.jpg" alt="Midterm">
           <img src="Images/adobe/Photoshop_FinalProject.jpg" alt="Final">
+          <img src="Images/adobe/Photoshop_MidTermProject.jpg" alt="Midterm">
           <img src="Images/adobe/WingfieldBrooklyn_FieldBlur.png" alt="Field Blur">
           <img src="Images/adobe/WingfieldBrooklyn_Peppers.png" alt="Peppers">
           <img src="Images/adobe/WingfieldBrooklyn_lion face_dog mask.png" alt="Mask">
         </details>
-        <details>
+        <details id="premiere">
           <summary>Premiere Pro</summary>
-          <video src="Images/adobe/COMM1310_S23_WingfieldBrooklyn_PremPro.mp4.mp4" autoplay muted></video>
-          <video src="Images/adobe/COMM1310_S23_WingfieldBrooklyn_PremPro2.mp4" autoplay muted></video>
-          <video src="Images/adobe/WingfieldBrooklyn_DemoReel.mp4" autoplay muted></video>
-          <video src="Images/adobe/WingfieldBrooklyn_DayintheLife.mp4" autoplay muted></video>
+          <video controls>
+            <source src= "Images/adobe/COMM1310_S23_WingfieldBrooklyn_PremPro.mp4.mp4">
+            Your browser does not support .mp4 videos. Please change browsers!
+          </video>
+          <video controls>
+            <source src="Images/adobe/COMM1310_S23_WingfieldBrooklyn_PremPro2.mp4">
+            Your browser does not support .mp4 videos. Please change browsers!
+          </video>
+          <video controls>
+            <source src="Images/adobe/WingfieldBrooklyn_DemoReel.mp4">
+            Your browser does not support .mp4 videos. Please change browsers!
+          </video>
+          <video controls>
+            <source src="Images/adobe/WingfieldBrooklyn_DayintheLife.mp4">
+            Your browser does not support .mp4 videos. Please change browsers!
+          </video>
         </details>
-        <details>
+        <details id="illustrator">
         <summary>Illustrator</summary>
+        <div>
           <img src="Images/adobe/portfolioproject5.png" alt="Illustrator Project">
-          <img src="Images/adobe/stationery-portfolio.png" alt="Illustrator Project">
           <img src="Images/adobe/final.png" alt="Illustrator Project">
           <img src="Images/adobe/coffee-producers.png" alt="Illustrator Project">
           <img src="Images/adobe/cafe-logo.png" alt="Illustrator Project">
+        </div>
         </details>
-        <details>
+        <details id="ae">
           <summary>After Effects</summary>
-          <video src="Images/adobe/AE Beginner Tutorial Export.mp4" autoplay muted></video>
-          <video src="Images/adobe/Opening Title.mp4" autoplay muted></video>
+          <video controls>
+            <source src="Images/adobe/AE Beginner Tutorial Export.mp4">
+            Your browser does not support .mp4 videos. Please change browsers!
+          </video>
+          <video controls>
+            <source src="Images/adobe/Opening Title.mp4">
+            Your browser does not support .mp4 videos. Please change browsers!
+          </video>
         </details>
-        </details>
+      </div>
 
+      <h1>> Radio</h1><br>
+      <p class="center-text">I also worked in Adobe audition for the editing on these .mp3 audios.</p>
         <details id="radio">
           <summary>Radio Work</summary>
+          <div class="radio">
+            <p class="radio">1. Promo</p>
+            <p class="radio">2. Banter</p>
+            <p class="radio">3. Team Banter</p>
+          </div> 
           <audio controls>
             <source src="Images/adobe/DJBrookeingtonPromo2_mixdown.mp3">
+            Your browser does not support .mp3 videos. Please change browsers!
           </audio>
           <audio controls>
             <source src="Images/adobe/DJBrookeingtonBanter2_mixdown.mp3">
+            Your browser does not support .mp3 videos. Please change browsers!
           </audio>
-          <audio controls>
+          <audio class="radio-last" controls>
             <source src="Images/adobe/DJBrookeington&SB_TeamBanter_mixdown.mp3">
+            Your browser does not support .mp3 videos. Please change browsers!
           </audio>
-          <div class="radio">
-            <p class="radio">^ Promo</p>
-            <p class="radio">^ Banter</p>
-            <p class="radio">^ Team Banter</p>
-          </div> 
         </details>
 
-        <details id="figma">
-          <summary>Figma Work</summary>
-        <div class="figma">
-          <iframe class="figma-project" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCnYmdufwZ2aqwQm6gKapus%2FTeam-Project--Destin%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D7MUU9QAMsUQljo43-1" allowfullscreen></iframe>
-          <iframe class="figma-project" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FI9qeyooeYsrjVGiXsv88UJ%2FBilly-Mac's-BurgCade%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DiMdhlOdgI4qiPqup-1" allowfullscreen></iframe>
+        <div id="figma">
+          <h1>> Figma Work</h1>
+          <p> Top 4 Figma layouts were made into sites.</p>
+          <div class="row">
+            <iframe class="figma-project" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCnYmdufwZ2aqwQm6gKapus%2FTeam-Project--Destin%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D7MUU9QAMsUQljo43-1" allowfullscreen></iframe>
+        <ol class="figma-col-1">
+          <iframe class="figma-project" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FI9qeyooeYsrjVGiXsv88UJ%2FBilly-Mac's-BurgCade%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DiMdhlOdgI4qiPqup-1" allowfullscreen></iframe>          <iframe class="figma-project" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FEMYC0dyAbl7M5lmiNibNc1%2FStove-Top-Academy-Prototype%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DRbR7CEKttj59daiF-1" allowfullscreen></iframe>
+        </ol>
+        <ol class="figma-col-2">
           <iframe class="figma-project" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F98dVgvLT5WVs58LIhHCnd0%2FFNAF-Final%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dm0gcriATH2dFnFZk-1" allowfullscreen></iframe>
-          <iframe class="figma-project" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FEMYC0dyAbl7M5lmiNibNc1%2FStove-Top-Academy-Prototype%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DRbR7CEKttj59daiF-1" allowfullscreen></iframe>
           <iframe class="figma-project" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0wpIdxLCShPjmtYogmOxAm%2FXyBitz-Photography-Wireframe%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DSJ47N1s9rTSfVDPN-1" allowfullscreen></iframe>
+        </ol>
         </div>
         </details>
         </div>
-      </div>
+      </details>
+      </div></div></div>
 <hr>
     <footer class="footer-distributed">
 
@@ -181,7 +213,7 @@
           </div>
 
           <div class="company-name">
-            <p class="footer-company-name">C^ode-aholics © 2024</p>
+            <p class="footer-company-name">© C^ode-aholics - 2024</p>
           </div>
   
         </div>
@@ -195,5 +227,20 @@
         </div>
   
       </footer>
+
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+    
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+    
+    </script>
+
 </body>
 </html>

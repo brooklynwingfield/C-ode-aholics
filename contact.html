@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://kit.fontawesome.com/9ca8aeaad4.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -15,12 +16,14 @@
        <div class="container">
         <nav>
             <img src="Images/header-logo.png" class="logo" alt="C^ode-aholics Logo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#containers">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul id="sidemenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#containers">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <h3>"Let's Code Together."</h3><br>
@@ -79,7 +82,7 @@
           </div>
 
           <div class="company-name">
-            <p class="footer-company-name">C^ode-aholics © 2024</p>
+            <p class="footer-company-name">© C^ode-aholics - 2024</p>
           </div>
   
         </div>
@@ -93,5 +96,19 @@
         </div>
   
       </footer>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+    
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+    
+    </script>
+    
 </body>
 </html>
