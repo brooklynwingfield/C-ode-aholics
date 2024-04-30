@@ -7,7 +7,7 @@
 
 body {
     color: white;
-    background-image: linear-gradient(#341fc5, #5369f1, #8dacf9, white);
+    background-image: linear-gradient(#341fc5, #5369f1, #8dacf9);
 }
 
 #header {
@@ -85,7 +85,7 @@ nav ul li a:hover::after {
 }
 
 span {
-    color: #5369f1;
+    color: #341fc5;
 }
 
 hr {
@@ -488,9 +488,9 @@ input[type=message], select, textarea {
   
 button[type=submit] {
     background: #341fc5;
-	outline: solid 2px #5369f1;
-	border: solid 2px white;
-	color: white;
+	  outline: solid 2px #5369f1;
+	  border: solid 2px white;
+	  color: white;
     padding: 12px 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -543,5 +543,62 @@ button[type=submit] a {
 
 .portfolio-nav button:hover {
   background-color: #341fc5;
-  
+}
+
+#webdesign, #adobe, #radio, #figma {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+embed {
+  width: 90%;
+  height: 100vh;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.embed {
+  text-align: center;
+}
+
+.wordpress {
+  margin-top: 50px;
+}
+
+.wordpress-button {
+  background: #341fc5;
+	  outline: solid 2px #5369f1;
+	  border: solid 2px white;
+	  color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+.wp-btn {
+  text-align: center;
+}
+
+audio {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+.radio {
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 100px;
+  margin-bottom: 10px;
+}
+
+.figma {
+  width: 100%;
+  text-align: center;
+}
+
+.figma-project {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
