@@ -665,11 +665,11 @@ nav .fa-solid {
 @media only screen and (max-width: 480px) {
   #header {
     background-image: url(/C-ode-aholics/Images/background-mobile.png);
-    width: 110%;
+    width: 100%;
   }
 
   hr {
-    width: 110%;
+    width: 100%;
   }
 
   .header-text {
