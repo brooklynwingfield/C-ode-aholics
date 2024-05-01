@@ -670,7 +670,7 @@ nav .fa-solid {
   display: none;
 }
 
-.premiere, .ae {
+.premiere {
     background: #341fc5;
 	  outline: solid 2px #5369f1;
 	  border: solid 2px white;
@@ -682,7 +682,24 @@ nav .fa-solid {
     margin-top: 20px;
 }
 
-.premiere a, .ae a {
+.ae {
+  background: #341fc5;
+	  outline: solid 2px #5369f1;
+	  border: solid 2px white;
+	  color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.premiere a {
+  text-decoration: none;
+  color: white;
+}
+
+.ae a {
   text-decoration: none;
   color: white;
 }
