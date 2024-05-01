@@ -66,6 +66,9 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 3%;
     font-size: 20px;
+    background: rgb(83, 105, 241, 0.6);
+    border-radius: 5px;
+    width: 60%;
 }
 
 .header-text h1 {
@@ -80,7 +83,7 @@ nav ul li a:hover::after {
 }
 
 .header-text p {
-    color: #5369f1;
+    color: white;
     font-weight: 500;
 }
 
@@ -671,6 +674,7 @@ nav .fa-solid {
   .header-text {
     margin-top: 100%;
     font-size: 16px;
+    width: 80%;
   }
 
   .header-text h1 {
@@ -845,6 +849,7 @@ nav .fa-solid {
   .header-text {
     margin-top: 30%;
     font-size: 20px;
+    width: 50%;
   }
 
   hr {
