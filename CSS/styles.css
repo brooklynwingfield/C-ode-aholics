@@ -123,7 +123,7 @@ hr {
 }
 
 .row p {
-  margin-top: -50px;
+  margin-top: 30px;
   margin-bottom: 30px;
   font-weight: bolder;
 }
@@ -317,7 +317,7 @@ border: 30px;
 
   .company-name {
     text-align: center;
-    margin-right: -50px;
+    margin-right: -10px;
   }
   
   /* Footer Center */
@@ -539,6 +539,10 @@ button[type=submit] a {
 #webdesign, #adobe, #radio, #figma {
   margin-top: 80px;
   margin-bottom: 80px;
+}
+
+.figma-full {
+  width: 100%;
 }
 
 #photoshop summary, #premiere summary, #illustrator summary, #ae summary {
